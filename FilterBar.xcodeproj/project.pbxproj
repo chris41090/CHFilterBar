@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A60043621F586D23004BAABC /* CHFilterBarConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHFilterBarConstants.swift; sourceTree = "<group>"; };
-		A613404B1FC0D23F0077CFD4 /* CHFilterBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CHFilterBar.podspec; path = FilterBar/CHFilterBar.podspec; sourceTree = SOURCE_ROOT; };
+		A613404B1FC0D23F0077CFD4 /* CHFilterBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHFilterBar.podspec; sourceTree = SOURCE_ROOT; };
 		A640F5D41F57EC1000F09D5F /* FilterBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A640F5D71F57EC1000F09D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A640F5D91F57EC1000F09D5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +50,7 @@
 		A640F5CB1F57EC1000F09D5F = {
 			isa = PBXGroup;
 			children = (
+				A613404B1FC0D23F0077CFD4 /* CHFilterBar.podspec */,
 				A640F5D61F57EC1000F09D5F /* FilterBar */,
 				A640F5D51F57EC1000F09D5F /* Products */,
 			);
@@ -67,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				A640F5F11F57EEB000F09D5F /* Supporting */,
-				A613404B1FC0D23F0077CFD4 /* CHFilterBar.podspec */,
 				A640F5EB1F57EE7300F09D5F /* CHFilterBlock.swift */,
 				A60043621F586D23004BAABC /* CHFilterBarConstants.swift */,
 				A640F5ED1F57EEA700F09D5F /* CHFilterBlockCollectionViewCell.swift */,
