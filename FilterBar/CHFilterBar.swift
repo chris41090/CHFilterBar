@@ -162,7 +162,7 @@ extension CHFilterBar:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         let block = blocks[indexPath.row]
         let extraPadding = block.containerPadding.left + block.containerPadding.right + block.labelPadding.left + block.labelPadding.right + 10 + 40
         let height = bounds.height
-        let width  = (block.title as NSString).size(attributes: [NSFontAttributeName:block.font]).width + extraPadding
+        let width  = (block.title as NSString).size(withAttributes: [NSAttributedStringKey.font:block.font]).width + extraPadding
         
         return CGSize(width: width, height: height)
     }
