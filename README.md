@@ -9,7 +9,7 @@ Filter Bar is an iOS control created with Swift that implement a bar with custom
 
 
 
-![Swift](https://preview.ibb.co/bFrvHm/Nov_21_2017_18_46_30.gif)
+![Swift](https://media.giphy.com/media/l2QDX77WaMurIIcOQ/giphy.gif)
 
 
 Features
