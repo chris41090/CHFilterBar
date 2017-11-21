@@ -94,16 +94,15 @@ filterBar.add(block: block, at: 1)
 
 ### Removing Filter Bolcks
 
-- **Removing a Blocks**:
-- ```swift
+- **Removing a Block**:
+```swift
 filterBar.remove(block: block)
-
 ```
 
 ### Modyfing Filter Bolcks
 
 - **Modyfing a single a filter Block**:
-- ```swift
+ ```swift
 let block = CHFilterBlock(title: "One")
 
 block.font = UIFont.systemFont(ofSize: 12)
@@ -116,12 +115,11 @@ filterBar.add(block: block)
 ```
 
 - **Modyfing all filter Blocks**:
-- ```swift
+```swift
 filterBar.blocksFont = UIFont.systemFont(ofSize: 12)
 filterBar.blocksBackgroundColor = UIColor.red
 filterBar.blocksCornerRadius = 0
 filterBar.blocksCloseButtonImage = UIImage(named:"customClose")
-
 ```
 
 
@@ -145,7 +143,7 @@ Supported appearance properties are:
 
 Demo
 -----------
-- ```swift
+```swift
 override func viewDidLoad() {
 super.viewDidLoad()
 let block1 = CHFilterBlock(title: "One")
