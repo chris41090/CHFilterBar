@@ -14,6 +14,8 @@ protocol CHFilterBarDelegate:class {
     func filterBar(filterBar:CHFilterBar,didAddBlock block:CHFilterBlock)
 }
 
+
+
 class CHFilterBar: UIView {
 
     

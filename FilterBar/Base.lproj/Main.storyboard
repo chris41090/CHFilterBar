@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hzq-gE-cxU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="ldc-YY-RBc">
+            <objects>
+                <navigationController id="Hzq-gE-cxU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3YW-CX-Qb8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HQK-11-Jha"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLk-Zt-fry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="163"/>
+        </scene>
+        <!--Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilterBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Demo" id="BYZ-38-t0r" customClass="ViewController" customModule="FilterBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,19 +38,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxu-U2-zEu" customClass="CHFilterBar" customModule="FilterBar" customModuleProvider="target">
-                                <rect key="frame" x="10" y="318.5" width="355" height="30"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="tu1-Gk-zZl"/>
+                                    <constraint firstAttribute="height" constant="30" id="1t1-DV-p9j"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-8C-bSU">
-                                <rect key="frame" x="164.5" y="425" width="46" height="30"/>
+                                <rect key="frame" x="164.5" y="122" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="NQ0-mb-iFj"/>
                                     <constraint firstAttribute="height" constant="30" id="g01-Wq-hTz"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Imp-8c-N8Y"/>
                                 </connections>
@@ -42,13 +58,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Uxu-U2-zEu" secondAttribute="trailing" constant="10" id="ZU7-EC-vEv"/>
-                            <constraint firstItem="Uxu-U2-zEu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gpE-zO-MYg"/>
-                            <constraint firstItem="LKw-8C-bSU" firstAttribute="centerX" secondItem="Uxu-U2-zEu" secondAttribute="centerX" id="hQT-cI-JTW"/>
-                            <constraint firstItem="Uxu-U2-zEu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="oj7-T7-i6I"/>
-                            <constraint firstItem="LKw-8C-bSU" firstAttribute="top" secondItem="Uxu-U2-zEu" secondAttribute="bottom" constant="76.5" id="sHU-7Z-YU2"/>
+                            <constraint firstAttribute="trailing" secondItem="Uxu-U2-zEu" secondAttribute="trailing" id="8P7-iL-8vF"/>
+                            <constraint firstItem="LKw-8C-bSU" firstAttribute="centerX" secondItem="Uxu-U2-zEu" secondAttribute="centerX" id="Gnd-A1-BD4"/>
+                            <constraint firstItem="Uxu-U2-zEu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kse-WT-hK0"/>
+                            <constraint firstItem="LKw-8C-bSU" firstAttribute="top" secondItem="Uxu-U2-zEu" secondAttribute="bottom" constant="16" id="SZq-hl-boj"/>
+                            <constraint firstItem="Uxu-U2-zEu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="zjZ-eH-t72"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bbs-jK-2dh"/>
                     <connections>
                         <outlet property="filterBar" destination="Uxu-U2-zEu" id="Amb-HX-ehC"/>
                     </connections>

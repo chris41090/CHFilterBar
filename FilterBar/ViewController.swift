@@ -17,31 +17,27 @@ class ViewController: UIViewController {
     @IBAction func add(_ sender: Any) {
         
         item += 1
-        let block1 = CHFilterBlock(title: "test " + item.description)
+        let block1 = CHFilterBlock(title: "Test" + item.description)
+        block1.backgroundColor = UIColor.black
         filterBar.add(block: block1)
-        
-        filterBar.blocks.first?.title = "Xa xa xa"
+
    
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let block1 = CHFilterBlock(title: "Elephan")
-        
-
-        let block2 = CHFilterBlock(title: "Tiger")
-        let block3 = CHFilterBlock(title: "Crocodile")
-        let block4 = CHFilterBlock(title: "Diomedea irrorata")
-        
-        let block5 = CHFilterBlock(title: "cat")
-        
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let block1 = CHFilterBlock(title: "One")
+        block1.backgroundColor = UIColor.red
         filterBar.add(block: block1)
+        
+        let block2 = CHFilterBlock(title: "Two")
+        block2.backgroundColor = UIColor.blue
         filterBar.add(block: block2)
+        
+        let block3 = CHFilterBlock(title: "Three")
+        block3.backgroundColor = UIColor.green
         filterBar.add(block: block3)
-        filterBar.add(block: block4)
-        filterBar.add(block: block5)
     }
+
 }
 

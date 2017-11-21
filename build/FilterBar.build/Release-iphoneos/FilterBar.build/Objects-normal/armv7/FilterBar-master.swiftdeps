@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "2d67e9acb051093ee461989de703c73d"
+build_time: [1511042823, 122691000]
+inputs:
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/ViewController.swift": [9223372036, 854775807]
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/CHFilterBlockCollectionViewCell.swift": [9223372036, 854775807]
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/CHFilterBlock.swift": [9223372036, 854775807]
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/CHFilterBar.swift": [9223372036, 854775807]
+  "/Users/christos.chadjikyriacou/Documents/iOS Apps/FilterBar/FilterBar/CHFilterBarConstants.swift": [9223372036, 854775807]
