@@ -83,11 +83,11 @@ filterBar.add(block: block, at: 1)
 - **Adding a Block with Callbacks**:
 
 ```swift
-let block = CHFilterBlock(id: 1, title: "One", action: { (block) in
-print("Do something")
-}) { (block) in
-print("Do something else")
-}
+let block = CHFilterBlock(id: 1, title: "Test", action: { (block) in
+    print("Do something")
+},close:{ (block) in
+    print("Do something Else")
+})
 
 filterBar.add(block: block, at: 1)
 ```
@@ -145,18 +145,18 @@ Demo
 -----------
 ```swift
 override func viewDidLoad() {
-super.viewDidLoad()
-let block1 = CHFilterBlock(title: "One")
-block1.backgroundColor = UIColor.red
-filterBar.add(block: block1)
+    super.viewDidLoad()
+    let block1 = CHFilterBlock(title: "One")
+    block1.backgroundColor = UIColor.red
+    filterBar.add(block: block1)
 
-let block2 = CHFilterBlock(title: "Two")
-block2.backgroundColor = UIColor.blue
-filterBar.add(block: block2)
+    let block2 = CHFilterBlock(title: "Two")
+    block2.backgroundColor = UIColor.blue
+    filterBar.add(block: block2)
 
-let block3 = CHFilterBlock(title: "Three")
-block3.backgroundColor = UIColor.green
-filterBar.add(block: block3)
+    let block3 = CHFilterBlock(title: "Three")
+    block3.backgroundColor = UIColor.green
+    filterBar.add(block: block3)
 }
 
 ```
